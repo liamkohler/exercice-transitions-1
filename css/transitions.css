@@ -1,0 +1,105 @@
+:root {
+  --midnight-green: #124559;
+  --beige: #eff6e0;
+}
+
+#ex02 .box,
+#ex03 .box,
+#ex04 .box,
+#ex05 .box,
+#ex06 .box,
+#ex07 .box {
+  transition-property: background-color, color;
+  transition-duration: 0.5s;
+}
+
+#ex01 .box:hover,
+#ex02 .box:hover,
+#ex03 .box:hover,
+#ex04 .box:hover,
+#ex05 .box:hover,
+#ex06 .box:hover,
+#ex07 .box:hover {
+  background-color: var(--midnight-green);
+}
+
+#ex04 .box:hover,
+#ex05 .box:hover {
+  color: var(--beige);
+}
+
+#ex05 .box {
+  transition-property: color;
+  transition-delay: 0.2s;
+}
+
+#ex06 .wrapper:hover {
+  .box {
+    background-color: var(--midnight-green);
+  }
+}
+
+#ex07 .wrapper:hover {
+  .box {
+    background-color: var(--midnight-green);
+  }
+}
+
+#ex07 .box:nth-child(2) {
+  transition-delay: 0.2s;
+}
+
+#ex07 .box:nth-child(3) {
+  transition-delay: 0.4s;
+}
+
+#ex08 .wrapper,
+#ex08 .box,
+#ex09 .wrapper,
+#ex09 .box {
+  transition-property: background-color, color;
+  transition-duration: 0.5s;
+}
+
+#ex08 .box:hover,
+#ex09 .box:hover {
+  background-color: var(--beige);
+}
+
+#ex08 .wrapper:hover {
+  background-color: var(--midnight-green);
+
+  .box {
+    background-color: var(--beige);
+  }
+}
+
+#ex09 .wrapper:hover {
+  background-color: var(--midnight-green);
+  transition-duration: 0.5s;
+
+  .box {
+    background-color: var(--beige);
+    transition-delay: 0.5s;
+    transition-duration: 0.5s;
+  }
+}
+
+#ex10 .box,
+#ex11 .box,
+#ex12 .box {
+  transition-property: transform;
+  transition-duration: 0.5s;
+}
+
+#ex10 .box:hover {
+  transform: translateY(20px);
+}
+
+#ex11 .box:hover {
+  transform: rotate(90deg);
+}
+
+#ex12 .box:hover {
+  transform: scale(1.2);
+}
